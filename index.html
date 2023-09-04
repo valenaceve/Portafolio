@@ -1,0 +1,373 @@
+<!--Especifica que estamos trabajando un documento HTML-->
+<!DOCTYPE html>
+<!--Especifica el lenguaje que la cual trabajaremos en el documento-->
+<html lang="en">
+<!--Especificamos las rutas de los archivos externos de nuestro proyecto web-->
+
+<head>
+    <!--Especificamos que nuestro documento permita caracteres especiales-->
+    <meta charset="UTF-8">
+    <!--Especificamos que nuestro contenido se visualice en diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Especificamos el título de nuestro proyecto web-->
+    <title>Portafolio Valenaceve</title>
+    <!--Enlace a la hoja de estilos externa de Boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Enlace a la hoja de estilos externa del CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--Especifica el contenido de nuestro sitio web-->
+
+<body>
+    <header>
+        <!-- Inicio del menú de navegación -->
+        <nav class="navBar">
+            <ul class="navBar__containerList">
+                <li><a href="#inicio" class="navBar__link">Welcome</a></li>
+                <li><a href="#servicios" class="navBar__link">About</a></li>
+                <li><a href="#clientes" class="navBar__link">Proyects</a></li>
+                <li><a href="#contacto" class="navBar__link" link--active>Hablemos!</a></li>
+            </ul>
+        </nav>
+        <!-- Inicio del menú de navegación -->
+
+        <!-- Inicio sección baner -->
+        <section class="containerBanner" id=inicio>
+            <figure class="Banner__image">
+                <img src="img/logo-valenaceve.svg" alt="baner-valenaceve">
+                <div class="socialmedia">
+                    <i class='socialmedia__icon bx bxl-facebook-circle'></i>
+                    <i class='socialmedia__icon bx bxl-linkedin-square'></i>
+                    <i class='socialmedia__icon bx bxl-twitter'></i>
+                    <i class='socialmedia__icon bx bxl-instagram'></i>
+                    <i class='socialmedia__icon bx bxl-github'></i>
+                </div>
+            </figure>
+
+            <div class="Banner__text">
+                <h1 class="text--title">Hi <span>everyone!</span></h1>
+                <p class="text--paragraph">I'm Valenaceve, <span class="point">a FullStack Developer.</span><br>Me apasiona crear experiencias atractivas, accesibles y centradas en el usuario.</br></p>
+
+                <a href="https://drive.google.com/drive/folders/1RhVePJUdrYtwVTPZnlQTA2JLytwJ8Coz?usp=sharing" target="_blank" class="btn__conoceMas">Descarga mi CV</a>
+            </div>
+
+        </section>
+        <!-- Fin sección baner -->
+        <section class="email container container--modifier">
+            <div class="check">
+                <div class="check__item">
+                        <img src="img/icono-capas.svg" class='bx bx-check'>
+                    <div class="check__numbers">
+                        <p class="check__number">Diseño + Desarrollo</p>
+                        <p class="check__copy">Desde la idea hasta la implementación</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                        <img src="img/logo-brand2.svg" class='bx bx-check'>
+                    <div class="check__numbers">
+                        <p class="check__number">BrandCraft</p>
+                        <p class="check__copy">Me gusta crear identidades memorables</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <img src="img/icono-ecomm.svg" class='bx bx-check'>
+                    <div class="check__numbers">
+                        <p class="check__number">Websites + Ecommerce</p>
+                        <p class="check__copy">Te ayudo a potenciar tu negocio en línea</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--Contenido Principal-->
+    <main>
+        <section class="services" id="servicios">
+            <div class="container">
+                <h2 class="subtitle">Sobre mí<span class="point">.</span></h2>
+                <p class="copy__section">Soy Valentina Acevedo Areiza.</p>
+                <p class="copy__section2">Durante el ultimo año, he estudiado y trabajado con el desarrollo front-end, incluyendo varias áreas del diseño digital, marketing y aplicaciones que integren UI/UX.
+                    Actualmente, estoy complementando mis estudios con el desarrollo back-end y el uso de las metodologías scrum.</p>
+                <!--Especifica que creará un contenedor para los articulos de los servicios-->
+                <article class="container-cards">
+                    <div class="card">
+                        <img src="img/tecnicalskilsss.svg" class="card__img">
+                        <div class="cards__text">
+                            <h3 class="card__title">Technical Skills<span class="point">.</span></h3>
+                            <p class="card__copy">
+                                <div class="contenedor-intereses">
+                                    <div class="interes">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <span>HTML & CSS</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Bootstrap</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Java</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Spring Boot</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Postman</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>MySQL & MONGODB</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>Git - GitHub</span>
+                                    </div>
+                                    <div class="interes">
+                                      <i class="fa-solid fa-film"></i>
+                                        <span>Scrum</span>
+                                    </div>
+
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/personalskills.svg" class="card__img">
+                        <div class="cards__text">
+                            <h3 class="card__title">Personal Skills<span class="point">.</span></h3>
+                            <p class="card__copy">
+                                <div class="contenedor-intereses">
+                                    <div class="interes">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <span>Mentalidad Crecimiento</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <span>Responsabilidad Personal</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Trabajo en Equipo</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Atención al detalle</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Bondad</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Creatividad</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/inteseslogo.svg" class="card__img">
+                        <div class="cards__text">
+                            <h3 class="card__title">Interests<span class="point">.</span></h3>
+                            <p class="card__copy">
+                                <div class="contenedor-intereses">
+                                    <div class="interes">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <span>Juegos</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-headphones"></i>
+                                        <span>Musica</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-brands fa-apple"></i>
+                                        <span>Podcast</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <span>Meditar</span>
+                                    </div>
+                                    <div class="interes">
+                                      <i class="fa-solid fa-film"></i>
+                                        <span>Lectura</span>
+                                    </div>
+                                    <div class="interes">
+                                        <i class="fa-solid fa-car"></i>
+                                        <span>Poemas</span>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--Especifica la información de nuestros proyectos-->
+        <!--<section class="projects container" id="proyectos">
+            <h2 class="subtitle">Proyectos Recientes<span class="point">.</span></h2>
+            <p class="copy__section">Hemos colaborado con marcas reconocidas a nivel mundial</p>
+            <article class="container-bg">
+                <div class="card">
+                    <div class="cards__text">
+                        <h3 class="card__title">Diseño web<span class="point">.</span></h3>
+                        <p class="card__date">24 de Agosto 2023</p>
+                        <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                            reiciendis accusantium dicta quis natus qui voluptate aliquam dolores aut beatae eos a,
+                            rerum maiores autem provident soluta consequatur inventore expedita.</p>
+                        <a href="#" class="card__button">Comienza tu proyecto</a>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="img/5.jpg" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title">La educación en línea</h3>
+                        <p class="background__copy">La realidad aumentada transformará por completo la educación</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cards__text">
+                        <h3 class="card__title">Diseño web<span class="point">.</span></h3>
+                        <p class="card__date">24 de Agosto 2023</p>
+                        <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+                            reiciendis accusantium dicta quis natus qui voluptate aliquam dolores aut beatae eos a,
+                            rerum maiores autem provident soluta consequatur inventore expedita.</p>
+                        <a href="#" class="card__button">Comienza tu proyecto</a>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="img/6.avif" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title">La educación en línea</h3>
+                        <p class="background__copy">La realidad aumentada transformará por completo la educación</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--Especifica la info de la sección de testimonios-->
+        <section class="testimony" id="clientes">
+            <div class="container">
+                <h2 class="subtitle">Proyectos<span class="point">.</span></h2>
+                <p class="copy__section">Finalizados y en curso</p>
+
+                <div class="testimony-container">
+                    <div class="testimony__card">
+                        <img src="img/7.jpg" class="testimony__img">
+                        <div class="testimony__copy">
+                            <i class='bx bxl-google testimony__logo'></i>
+                            <div class="testimony__info">
+                                <h3 class="testimony__name">Sitios y Apps Webs</h3>
+                                <p class="testimony__position">+ e-commerse</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony__card">
+                        <img src="img/logoPrincipalSinFondo (1).png" class="testimony__img">
+                        <div class="testimony__copy">
+                            <i class='bx bxl-apple testimony__logo'></i>
+                            <div class="testimony__info">
+                                <h3 class="testimony__name">Marcas y Social Media</h3>
+                                <p class="testimony__position">Branding, logos, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony__card">
+                        <div class="testimony__text">
+                            <div class="img_container">
+                                <img src="img/logo-google.svg" class="google__logo">
+                            </div>
+                            <p class="testimony__history">“Valentina es una estudiante comprometida ...”</p>
+                            <div class="testimony__copy testimony__copy--modifier">
+                                <img src="img/8.jpg" class="testimony__logo logo--picture">
+                                <div class="testimony__info">
+                                    <h3 class="testimony__name">Referencia</h3>
+                                    <p class="testimony__position">Profesor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="footer" id="contacto">
+        <!--<div class="container footer__caption">
+            <section class="download">
+                <h3 class="title__footer">Descarga nuestra App</h3>
+                <div class="download__app">
+                    <div class="download__item">
+                        <i class='bx bxl-apple download__logo'></i>
+                        <h4 class="download__title">App Store</h4>
+                    </div>
+                    <div class="download__item">
+                        <i class='bx bxl-play-store download__logo'></i>
+                        <h4 class="download__title">Play Store</h4>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <p class="copyright">AlexCG &copy; 2020 Todos los derechos reservados</p>
+
+                    <a href="#" class="politica__privacidad politica__privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica__privacidad ">Terminos y condiciones</a>
+                </div>
+            </section>-->
+            <section class="get-email">
+                <h3 class="title__footer">¿Tienes alguna pregunta? Hablemos!</h3>
+                <form   class="newsletter newsletter--modifier">
+                    <input type="text" class="newsletter__input" placeholder="Tú Nombre Completo">
+                    <input type="text" class="newsletter__input" placeholder="Número telefónico">
+                    <input type="text" class="newsletter__input" placeholder="Dirección de correo">
+                    <input type="text" class="newsletter__input" placeholder="Tema">
+                    <textarea name="message" class="newsletter__input" id="" cols="30" rows="6" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="newsletter__submit" value="ENVIAR MENSAJE">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <div class="contact">
+            <div class="item__contact">
+                <i class='bx bx-copyright contact__icon'></i>
+                <h3 class="contact__title">Linkedin</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bx-mail-send contact__icon'></i>
+                <h3 class="contact__title">vacevedoareiza@gmail.com</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-edit-location contact__icon'></i>
+                <h3 class="contact__title">Medellín,COL</h3>
+            </div>
+            <div class="item__contact item__contact--gold">
+                <i class='bx bxs-chat contact__icon contact__icon--modifier'></i>
+                <h3 class="contact__title">Contactame ahora</h3>
+                <a href="https://api.whatsapp.com/send?phone=573013044774" target="_blank" class="btn__whatsapp">Click aquí para ir a WhatsApp</a>
+            </div>
+        </div>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        
+    </footer>
+    </main>
+    <!-- Execute scripts to handle the app -->
+    <script>
+        window.addEventListener("scroll", function() {
+            const banner = document.querySelector("nav.navBar");
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            if (scrollY > windowHeight) {
+                banner.classList.add("navBar-scrolled");
+            } else {
+                banner.classList.remove("navBar-scrolled");
+            }
+        });
+       </script>
+</body>
+</html>

@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@font-face {
+    font-family: font-instagramCustom;
+    src: url(font-instagram/InstagramSansHeadline-Regular.ttf);
+}
+
+
+/*Define una serie de variables de CSS personalizadas*/
+:root {
+    --gold1: #7D7EC4;
+    --gold2: #7780FF;
+    --gray: #77A7FF;
+    --gray2: #AAC9FF;
+    --black1: #D0E1F9;
+    --black2: #FFA9E2;
+    /*Definición de sombra con desplazamiento y enfoque*/
+
+    /*arriba, derecha, izquierda y abajo y el último valor siempre hará referencia al difuminado*/
+    --shadow: 0 8px 8px;
+    --color_shadow: #0000005b;
+}
+
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    font-family:font-instagramCustom;
+    background: rgb(255,169,226);
+    background: radial-gradient(circle, rgba(255,169,226,1) 0%, #ffffff 63%, rgb(255,169,226) 100%);
+}
+
+/* -------------------HEADER------------------- */
+
+.navBar{
+    /* Estilos originales aquí */
+    /* transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease; */
+}
+
+/* Sección menú de navegación */
+.navBar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgb(255,169,226);
+    background: linear-gradient(90deg, rgba(255,169,226,1) 0%, rgba(119,128,255,1) 63%, rgba(133,125,196,1) 100%);
+    backdrop-filter: blur(20px) saturate(1.7);
+    z-index: 2;
+}
+
+.navBar-scrolled{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgb(255,169,226);
+    background: linear-gradient(90deg, rgba(255,169,226,1) 0%, rgba(119,128,255,1) 63%, rgba(133,125,196,1) 100%);
+    backdrop-filter: blur(20px) saturate(1.7);
+    z-index: 2;
+    border: 1px solid #aac9ff;
+    border-radius: 30px;
+    margin: 5px 30% 0px 30%;
+}
+
+.navBar__containerLogo{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+.navBar__containerLogo img{
+    height: 100%;
+    padding: 4px;
+}
+.logo--text{
+    font-size: 30px;
+    color: #7780FF;
+}
+.logo--text span{
+    color: #ffff;
+}
+
+/* Menú de navegación */
+.navBar__containerList{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.navBar__containerList-scrolled{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid;
+    border-color: #77A7FF;
+    border-radius: 32px;
+    padding: 5px;
+}
+
+
+.navBar__link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+.navBar__link:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black2);
+}
+.link--active{
+    color: var(--colorEnfasis1);
+    font-weight: bold;
+}
+
+
+/* Sección baner */
+.containerBanner{
+    width: 100%;
+    padding-top: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background: rgb(255,169,226);
+    background: linear-gradient(90deg, rgba(255,169,226,1) 0%, rgba(119,128,255,1) 63%, rgba(133,125,196,1) 100%);
+    background-size: cover;
+    background-position: center;
+}
+.Banner__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 3px 50px;
+}
+.text--title{
+    font-family: font-instagramCustom;
+    font-size: 90px;
+    margin: 30px;
+    line-height: 60px;
+    font-style: normal;
+    color: #AAC9FF ;
+    text-shadow:2px 2px #000000;
+}
+.text--paragraph{
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px;
+}
+.btn__conoceMas{
+    width: 200px;
+    border: solid var(--gray2);
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 40px;
+    color: var(--black2);
+    text-decoration: none;
+    font-family: font-instagramCustom;
+    font-size: 20px;
+}
+.btn__conoceMas:hover{
+    background-color: var(--black1);
+    color: var(--black2);
+}
+.btn__whatsapp{
+    width: 500px;
+    text-align: center;
+    padding: 55px 50px;
+    color: #ffffff;
+    text-decoration: auto;
+    font-family: font-instagramCustom;
+    font-size: 20px;
+}
+
+.Banner__image{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.Banner__image img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link:hover {
+    background: var(--black2);
+    border-radius: 5px;
+}
+
+.link--active {
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.point {
+    color: #ffffff;
+}
+
+.hero__main {
+   /* height: calc(100vh - 70px);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.mockup {
+    object-fit: cover;
+    width: 40%;
+    min-height: 92vh;
+}
+
+.hero__textos {
+    width: 48%;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 300;
+    color: white;
+}
+
+.title--active {
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.755);
+    margin: 15px 0;
+}
+
+.copy__active {
+    font-weight: 700;
+}
+
+.cta {
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f4bd76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    
+}
+/*Inicia la Personalización de la Sección de Servicios*/
+.services{
+    background: #fafafa;
+}
+
+.subtitle{
+    font-size: 45px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.subtitle--modifier{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.copy__section{
+    color: var(--gold2);;
+    font-size: 35px;
+    /*Nos permite especificar la línea de altura*/
+    /* line-height: 32px; */
+    /*Nos permite especificar el margen inferior*/
+    text-align: center;
+}
+.copy__section2{
+    color: var(--gold1);;
+    font-size: 20px;
+    padding: 0px 195px 0px 195px;
+    /*Nos permite especificar la línea de altura*/
+    /* line-height: 32px; */
+    /*Nos permite especificar el margen inferior*/
+    margin-bottom: 10px;
+    text-align: center;
+}
+.copy__section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-top: 10px;
+    /*Se encarga de ajustar el contenido en el sitio web*/
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 425px;
+    width: 400px;
+    padding: 20px 0;
+    overflow: hidden;
+    background: var(--gold2);
+    border-radius: 15px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color_shadow);
+    /*Aplicaunasombraalelementoutilizandolapropiedadbox-shadow*/box-shadow: 0 0 6px var(--color_shadow);
+    /*-00:;
+    Desplazamientohorizontalyverticaldelasombra,enestecaso,nohaydesplazamiento(sombracentrada).-6px:;
+    Radiodedifuminadodelasombra,creandounefectosuaveenunáreade6píxelesalrededordelelemento.-var(--color_shadow): Color de la sombra obtenido de la variable CSS --color_shadow.*/;
+}
+
+.card__img{
+    width: 80%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.cards__text{
+    text-align: left;
+    width: 90%;
+    margin:0 auto;
+}
+
+/*.card__list{
+    color: var(--gold2);
+    font-weight: 700;
+    /* Establece márgenes en las direcciones superior, derecha, inferior e izquierda del elemento */
+    /*margin: 25px 0 12px;
+/*
+   - 25px: Margen superior de 25 píxeles.
+   - 0: No se aplican márgenes en los lados derecho e izquierdo.
+   - 12px: Margen inferior de 12 píxeles.
+*/
+
+.card__title{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card__copy{
+    color: var(--gray2);
+    margin-bottom: 16px;
+}
+
+.contenedor-intereses{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interes{
+    width: 60px;
+    height: 60px;
+    background-color: var(--black2);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.interes span {
+    font-size: 11px;
+    padding: 20px;
+}
+.contenedor-intereses .interes i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.interes:hover{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card__button{
+    display: block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.card__date{
+    color: var(--gold2);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.container-bg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: stretch;
+}
+
+
+.background{
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.background__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.background__text{
+    position: absolute;
+    width: 100%;
+    bottom: 75px;
+    left: 15px;
+    color: #fff;
+}
+
+.background__title{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.testimony{
+    background: #fafafa;
+}
+
+.testimony-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* Controla el comportamiento de envoltura de elementos en un contenedor flexible */
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+    
+/*
+   - wrap: Permite que los elementos flexibles se envuelvan en una nueva línea si no caben en el ancho del contenedor.
+*/
+
+
+.testimony__card{
+    height: 425px;
+    width: 400px;
+    padding: 40px 0;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.testimony__img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.testimony__copy{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow) var(--color_shadow);
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.testimony__copy--modifier{
+    background: none;
+    box-shadow: none;
+}
+
+.testimony__logo{
+    font-size: 40px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.testimony__name{
+    font-size: 24px;
+    line-height:28px;
+}
+
+.testimony__position{
+    color: var(--gray);
+}
+
+.testimony__text{
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.google__logo{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.img_container {
+    
+}
+
+
+.testimony__history{
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
+.testimony__info{
+    width: 70%;
+}
+
+.logo--picture{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center top;
+}
+
+/* check */
+
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.check__item{
+    width: 30%;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: center;
+    padding: 17px;
+
+}
+
+.bx-check{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /* margin-right: 20px; */
+    /* color: #fff; */
+    /* border-radius: 50%; */
+    font-size: 40px;
+}
+
+.check__number{
+    font-weight: 700;
+    text-align: center;
+}
+
+.check__copy{
+    font-weight: 300;
+}
+
+.newsletter{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+}
+
+.newsletter--modifier{
+    margin: 0;
+    width: 80%;
+}
+
+.newsletter__input{
+    width: 100%;
+    height: 100%;
+    padding: 22px 10px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid var(--black1)
+}
+
+.newsletter__submit{
+    position: absolute;
+    /* right: 0px; */
+    top: 5%;
+    height: 90%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: rgba(133,125,196,1);
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.footer{
+    background: #fafafa;
+}
+
+.footer__caption{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+
+.title__footer{
+    font-size: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+
+}
+
+.download{
+    width: 50%;
+}
+
+.download__app{
+    display: flex;
+}
+
+.download__item{
+    display: flex;
+    padding: 18px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--black2);
+    width: 42%;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+
+.download__logo{
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.download__title{
+    font-size: 18px;
+}
+
+.footer__copy{
+    width: 100%;
+    color: var(--black2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    width: 100%;
+}
+
+.politica__privacidad{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.politica__privacidad:hover{
+    text-decoration: underline;
+}
+
+.politica__privacidad--margin{
+    margin-right: 10px;
+}
+
+.get-email{
+    width: 100%;
+    padding: 41px 341px 7px;
+}
+
+.socialmedia{
+    margin-bottom: 0px;
+    display: flex;
+    color: var(--black1);
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.socialmedia__icon{
+    display: inline-block;
+    padding: 7px;
+    border: 2px solid var(--black1);
+    border-radius: 100%;
+    margin: 8px;
+    font-size: 42px;
+}
+.socialmedia__icon:hover{
+    cursor: pointer;
+    color: var(--black2);
+    border: 2px solid var(--black2);
+}
+.link--active{
+    color: var(--colorEnfasis1);
+    font-weight: bold;
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #857DC4;
+}
+
+.item__contact{
+    width: 25%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+
+}
+
+
+.item__contact--gold{
+    background: linear-gradient(180deg, #857DC4 0%, #D0E1F9 100%);
+    
+}
+
+.contact__icon{
+    font-size: 14px;
+    color: var(--gold1);
+    line-height: 20px;
+}
+
+.contact__icon--modifier{
+    color: var(--black1);
+}
+
+.contact__title{
+    font-size: 16px;
+    line-height: 20px;
+}
+
